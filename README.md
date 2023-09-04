@@ -1,2 +1,20 @@
-# skia_context_debug
-Debug skia gpu context
+
+What is this?
+=============
+
+This repository is a minimal working example, demonstrating a problem when using GLFW and skia over an ssh -X
+connection. This issue occurs when ssh'ing from a Mac to a Linux machine. Linux-Linux connections seem to work though.
+
+To build you will need to have a system copy of glfw3 and X11 libraries::
+
+    git clone https://github.com/kcleal/skia_context_debug
+    cd skia_context_debug
+    make
+    .a.out
+
+Output is::
+
+    ./a.out
+    libGL error: No matching fbConfigs or visuals found
+    libGL error: failed to load driver: swrast
+    Error: skia GrGLInterface was not valid
