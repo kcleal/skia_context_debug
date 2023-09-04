@@ -5,6 +5,10 @@ What is this?
 This repository is a minimal working example, demonstrating a problem when using GLFW and skia over an ssh -X
 connection. This issue occurs when ssh'ing from a Mac to a Linux machine. Linux-Linux connections seem to work though.
 
+This is built on a linux machine (ubuntu tested).
+
+The skia library comes pre-built and was downloaded from JetBrains: https://github.com/JetBrains/skia-build/releases/download/m93-87e8842e8c/ 
+
 To build you will need to have a system copy of glfw3 and X11 libraries::
 
     git clone https://github.com/kcleal/skia_context_debug
